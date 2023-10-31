@@ -128,14 +128,7 @@ print(nums_with_4)
 ## count how many times the word 'the' appears in the text file - 'sometext.txt'
 
 infile=open('sometext.txt','r')
-
-
-
 count=0
-# the_count=[word for line in infile for word in line.split() if word.lower()=='the']
-# print(the_count)
-
-
 for the in [word for line in infile for word in line.split() if word.lower()=='the']:
     count+=1
 print(count)
